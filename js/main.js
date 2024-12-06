@@ -65,6 +65,9 @@ results.forEach(function(el) {
 form.onsubmit = (e) => {
     e.preventDefault();
     calculateResults();
+    // Scroll to result (more apparent for mobile devices)
+    const resultArea = document.querySelector('#results');
+    resultArea.scrollIntoView();
 };
 
 // Set retake button to hidden
