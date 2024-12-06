@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> In the Mood for a K-Drama: A Quiz </title>
+        <!-- Bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="home" class="col-lg-12 pt-5 min-vh-100 d-flex">
+                    <div id="intro" class="text-center mx-auto fs-5 m-3 d-flex-column align-self-center">
+                        <h1 class="display-2">In the Mood for a K-Drama</h1>
+                        <p>Do you want to watch a Korean drama but don't know which one to pick?</p>
+                        <p>Take this 12-question quiz to see what drama may interest you.</p>
+
+                        <div class="buttons">
+                            <a class="btn btn-dark me-2 mb-2" href="#quiz" role="button">Take quiz</a>
+                            <a class="btn btn-dark mb-2" href="#info" role="button">What are K-dramas?</a>
+                        </div>
+                    </div> <!-- End of 'home' class -->
+                </div> <!-- End of first column -->
+                
+                <div id="quiz" class="col-lg-5 mx-auto">
+                    <div class="mt-5 mb-3 fs-5">
+                        <form id="myForm" action="js/main.js" method="post">
+                            <!-- Top reset button, appears when user starts quiz -->
+                            <input type="reset" class="btn btn-secondary mb-3 mx-auto" id="topreset" value="Reset Quiz">
+            
+                            <!-- Question 1 -->
+                            <div class="mb-3">
+                                <label class="form-label">1. What genre never fails to intrigue you?</label>
+            
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question1" value="romance">
+                                        Romance
+                                    </label>
+                                </div>
+            
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question1" value="action">
+                                        Action
+                                    </label>
+                                </div>
+            
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question1" value="comedy">
+                                        Comedy
+                                    </label>
+                                </div>
+            
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question1" value="thriller">
+                                        Psychological thriller
+                                    </label>
+                                </div>
+            
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question1" value="slice of life">
+                                        Slice of life
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q1 -->
+            
+                            <!-- Question 2 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">2. When watching a show or reading a novel, how important is a happy ending to you?</label>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question2" value="waste without it">
+                                        I think it's a waste of time if it doesn't have a happy ending.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question2" value="prefer happy">
+                                        I prefer a happy ending, but I don't think I'd like something less without one.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question2" value="plot matters">
+                                        How the plot develops matters more to me than the ending.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question2" value="do not need">
+                                        The ending doesn't need to be happy to be good.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question2" value="prefer unhappy">
+                                        I tend to prefer unhappy endings over happy ones.
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q2 -->
+            
+                            <!-- Question 3 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">3. Do you like the feeling of crying?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question3" value="no">
+                                        No. What a weird question!
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question3" value="not really">
+                                        Not really, but I get why someone would.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question3" value="sometimes">
+                                        Sometimes.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question3" value="yes if happy">
+                                        Yes, if you mean happy tears!
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question3" value="absolutely">
+                                        Absolutely. I like the feeling of catharsis.
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q3 -->
+            
+                            <!-- Question 4 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">4. What do you look for in a main character?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question4" value="determination">
+                                        Determination
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question4" value="humor">
+                                        Humor
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question4" value="charisma">
+                                        Charisma
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question4" value="relatability">
+                                        Relatability
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question4" value="imperfection">
+                                        Imperfection
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q4 -->
+            
+                            <!-- Question 5 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">5. Which quote appeals to you the most?</label>  
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question5" value="instead of">
+                                        "Instead of bottling everything up, it's better to say what you want and do what you want to do. That's more human."
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question5" value="im not unhappy">
+                                        "I'm not unhappy, but I'm not happy either. I wouldn't care if the world ended now."
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question5" value="its not a">
+                                        "It's not a crime to be poor. Being ugly is, though."
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question5" value="life is">
+                                        "Life is a battle. You can't lose, and you can't give in."
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question5" value="doyouknow">
+                                        "Do you know what I hated most? The rain. But, it rained the first time I saw you. I liked it that day."
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q5 -->
+            
+                            <!-- Question 6 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">6. Which of these tropes do you like the most?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question6" value="unassuming antagonist">
+                                        Unassuming antagonist
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question6" value="friends lovers">
+                                        Friends to lovers
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question6" value="time travel">
+                                        Time travel
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question6" value="revenge">
+                                        Revenge
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question6" value="none">
+                                        None of these
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q6 -->
+            
+                            <!-- Question 7 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">7. How do you feel about love triangles?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question7" value="love">
+                                        I love them! They make the plot so much better.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question7" value="like">
+                                        I usually like them.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question7" value="sometimes like">
+                                        I sometimes like them.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question7" value="annoying">
+                                        They tend to be annoying, but I can tolerate them.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question7" value="hate">
+                                        I hate them. They're unnecessary!
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q7 -->
+            
+                            <!-- Question 8 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">8. In which of these places would you like to live?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question8" value="countryside">
+                                        The countryside
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question8" value="city">
+                                        A big, bustling city
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question8" value="suburbs">
+                                        The suburbs
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question8" value="small town">
+                                        A small town right by the ocean
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question8" value="woods">
+                                        The woods
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q8 -->
+                                            
+                            <!-- Question 9 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">9. What is a struggle you resonate with?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question9" value="no one cares">
+                                        Feeling like no one cares about you
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question9" value="stuck">
+                                        Feeling like you're stuck in the same place
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question9" value="dont fit in">
+                                        Feeling like you don't fit in anywhere
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question9" value="regretful">
+                                        Constantly feeling regretful
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question9" value="honest">
+                                        Not being able to be completely honest with others
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q9 -->
+            
+                            <!-- Question 10 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">10. You get put into your favorite show as one of its characters. What do you do first?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question10" value="try food">
+                                        Try one of the foods shown in the show
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question10" value="solve conflict">
+                                        Solve the show's major conflict
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question10" value="investigate">
+                                        Investigate a mystery not solved in the show
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question10" value="create plot">
+                                        Create a new plot point to spice things up
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question10" value="befriend">
+                                        Befriend your favorite character
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q10 -->
+            
+                            <!-- Question 11 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">11. How do you feel about open endings?</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question11" value="love">
+                                        I love open endings! They give room for imagination.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question11" value="like">
+                                        I usually like open endings.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question11" value="dont care">
+                                        I don't usually care how a show ends.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question11" value="prefer closed">
+                                        I prefer closed endings, but I sometimes don't mind an open ending.
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question11" value="dislike">
+                                        I dislike open endings. I need a show to wrap everything up when it ends.
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q11 -->
+            
+                            <!-- Question 12 -->
+                            <div class="mt-3 mb-3">
+                                <label class="form-label">12. Pick a year.</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result4 form-check-input" type="radio" name="question12" value="2015">
+                                        2015
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result2 form-check-input" type="radio" name="question12" value="2019">
+                                        2019
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result5 form-check-input" type="radio" name="question12" value="2021">
+                                        2021
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result3 form-check-input" type="radio" name="question12" value="2022">
+                                        2022
+                                    </label>
+                                </div>
+                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="result1 form-check-input" type="radio" name="question12" value="2024">
+                                        2024
+                                    </label>
+                                </div> 
+                            </div> <!-- End of Q12 -->
+            
+                            <!-- Submit and reset buttons -->
+                            <div class="mt-3 mb-3 text-center">
+                                <input type="submit" class="btn btn-primary mb-2" value="Submit Answers" disabled>
+            
+                                <input type="reset" class="btn btn-secondary mb-2" value="Reset Quiz">
+                            </div>
+                        </form>
+                    </div> 
+                </div> <!-- End of quiz div -->
+
+                <div class="col-lg-12 mx-auto">
+                    <div id="results" class="col-lg-5 mx-auto">
+                        <!-- All result divs -->
+                        <div id="drama1" class="result fs-5 p-4 rounded bg-dark bg-opacity-10 mt-3 mb-3">
+                            <h2 class="text-center">Lovely Runner (2024)</h2>
+                            <p>You seem to be in the mood for a rom-com. "Lovely Runner" is a K-drama that has taken South Korea (and other parts of the world) by storm in 2024, and you may like it as well if you haven't seen it already.</p>
+                            <p>"Lovely Runner" follows the love story between a young woman named Sol and her favorite singer, Sunjae. After discovering Sunjae's unfortunate fate, Sol miraculously gains the ability to travel back in time and rewrite his future.</p>
+                            <p>While the show may start off with what appears to be a myriad of cliches between a celebrity and a fan, the second episode reveals a twist that may make you more curious than ever about how their love story will play out.</p>
+                            <p class="fs-4">You can watch "Lovely Runner" on Viki by clicking <a href="https://www.viki.com/tv/40466c-lovely-runner" target="_blank">here</a>.</p>
+                        </div>
+                        
+                        <div id="drama2" class="result fs-5 p-4 rounded bg-dark bg-opacity-10 mt-3 mb-3">
+                            <h2 class="text-center">Strangers From Hell (2019)</h2>
+                            <p>It seems like you're in the mood for something heavy, so consider tuning into "Strangers from Hell" if you haven't already.</p>
+                            <p>This psychological thriller follows Jongwoo, a young man who moves from a small town to a big city after getting a new job. He moves into a cheap apartment with a group of mysterious residents but comes to learn that the people living there are not so friendly.</p>
+                            <p>"Strangers from Hell" is a title often mentioned in the realm of "dark" K-dramas, with a devoted following. If you like a show that doesn't spell everything out for you, "Strangers from Hell" is a work rich with mysteries.</p>
+                            <p>The show's imagery can be unsettling, so view it at your own risk.</p>
+                            <p class="fs-4">You can watch "Strangers from Hell" on Apple TV by clicking <a href="https://tv.apple.com/us/show/strangers-from-hell/umc.cmc.3h3v72xcxpw4adih3vpookpww" target="_blank">here</a>.</p>
+                        </div>
+                
+                        <div id="drama3" class="result fs-5 p-4 rounded bg-dark bg-opacity-10 mt-3 mb-3">
+                            <h2 class="text-center">My Liberation Notes (2022)</h2>
+                            <p>While K-dramas are known for the drama, you seem to want something more understated, like "My Liberation Notes."</p>
+                            <p>"My Liberation Notes" is a slice-of-life story following the lives of three siblings in their 30s as they navigate their work, self-worth, friendship, and love.</p>
+                            <p>The show is heavily focused on the characters and their relationships with one another. It may not be over the top like other dramas, but it allures viewers with its memorable quotes and the characters' relatable everyday problems. You may know that if you've seen it already.</p>
+                            <p class="fs-4">You can watch "My Liberation Notes" on Netflix by clicking <a href="https://www.netflix.com/title/81568411" target="_blank">here</a>.</p>
+                        </div>
+                
+                        <div id="drama4" class="result fs-5 p-4 rounded bg-dark bg-opacity-10 mt-3 mb-3">
+                            <h2 class="text-center">Reply 1988 (2015)</h2>
+                            <p>If you want to watch something that makes you feel at home, “Reply 1988” might be a K-drama to add to your watch list. It has a little bit of everything, from comedy to romance. (Though it's more comedic than romantic.)</p>
+                            <p>Set in Seoul 1988, the show follows a group of best friends and their families growing up together in a small neighborhood. The lighthearted banter between the five main characters may leave you crying from laughter, while the heartfelt moments between them and their families may overcome you with emotion.</p>
+                            <p>This 2015 K-drama has become a must-watch among K-drama lovers for its simple yet memorable plot, but you might know that if you've seen it already.</p>
+                            <p class="fs-4">You can watch "Reply 1988" on Viki by clicking <a href="https://www.viki.com/tv/26576c-reply-1988" target="_blank">here</a>.</p>
+                        </div>
+                
+                        <div id="drama5" class="result fs-5 p-4 rounded bg-dark bg-opacity-10 mt-3 mb-3">
+                            <h2 class="text-center">My Name (2021)</h2>
+                            <p>You seem to prefer a show with some angst and action, so consider watching "My Name" if you haven't already.</p>
+                            <p>"My Name" is a female-centric revenge thriller following Jiwoo, a tenacious young woman who becomes a vigilante and hunts down her father's killer. As she learns more about what happened to him, she realizes that her target is much closer than she thinks.</p>
+                            <p>The characters' charisma, well-executed action scenes, and stunning cinematography in "My Name" will compel you to appreciate the beauty of K-dramas and their diverse genres. You may also be charmed (or not) by the hint of romance somewhere in the show.</p>
+                            <p class="fs-4">You can watch "My Name" on Netflix by clicking <a href="https://www.netflix.com/title/81011211" target="_blank">here</a>.</p>
+                        </div>
+
+                        <div id="retake" class="text-center mt-3 mb-3">
+                            <p class="small mb-2">Not satisfied with your result?</p>
+                            <a class="btn btn-dark btn-lg me-2" href="#quiz" role="button">Retake the quiz</a>
+                        </div>
+                    </div> <!-- End of results div -->
+                </div> <!-- End of container column for results div -->
+                
+                <!-- Info div -->
+                <div id="info" class="col-lg-12 min-vh-100 pt-5 pb-5">
+                    <div class="col-lg-5 mx-auto">
+                        <h2 class="display-5 text-center">New to Korean dramas?</h2>
+                        <p class="text-center mb-5 fs-5">Here are some frequently asked questions about them! Click on any question to reveal its answer.</p>
+
+                        <p class="question fs-4 bg-dark text-light p-4 my-0" role="button">What is a "K-drama"?</p>
+                        <div class="answer bg-light p-4 mb-3">
+                            <p class="fs-5">"K-drama" is a colloquial term for "Korean drama," which refers to television shows made in South Korea. Koreans use the English loanword "drama" when referring to TV shows, which was included in the term used globally today.</p>
+                            <div class="col-lg-8 mx-auto">
+                                <img src="images/southkoreaflag.jpg" class="img-fluid" alt="Flag of South Korea">
+                                <p class="small mt-2">The flag of South Korea. (Image source: <a href="https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea_(1948%E2%80%931949)-2.svg" target="_blank">Lumia1234</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons)</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <p class="question fs-4 bg-dark text-light p-4 my-0" role="button">When did K-dramas become a thing?</p>
+                        <div class="answer bg-light p-4 mb-3">
+                            <p class="fs-5">The first K-drama dates back to the 1950s, according to the Korean Culture and Information Service. The rest of Asia and the world began to recognize K-dramas with greater technological advancements and easier communication. Increased licensing and streaming services have also made it easier for people worldwide to gain access to K-dramas today.</p>
+                            <p class="small">References:</p>
+                            <p class="small"><a href="https://www.kocis.go.kr/eng/webzine/202008/sub01.html" target="_blank">Yun, S. (2020). Hallyu-binger of Success. Korean Culture and Information Service.</a></p>
+                            <p class="small"><a href="https://www.researchgate.net/profile/Hyejung-Ju/publication/326518806_The_Korean_Wave_and_Korean_Dramas/links/5b9c2d7b45851574f7cb4d56/The-Korean-Wave-and-Korean-Dramas.pdf" target="_blank">Ju, H. (2018). The Korean Wave and Korean Dramas. Oxford Research Encyclopedia of Communication.</a></p>
+                            <div class="col-lg-8 mx-auto">
+                                <img src="images/kbsbuilding.jpg" class="img-fluid" alt="Photo of the Korean Broadcasting System building">
+                                <p class="small mt-2">The Korean Broadcasting System (KBS) building in Daejeon, South Korea. KBS launched the country's first ever broadcasting service, which televised the first K-dramas. (Image source: <a href="https://commons.wikimedia.org/wiki/File:Korean_Broadcasting_System_Daejeon_Building.jpg" target="_blank">Trainholic</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons)</p>
+                            </div>
+                        </div>
+                        
+                        <p class="question fs-4 bg-dark text-light p-4 my-0" role="button">Are all K-dramas romantic?</p>
+                        <div class="answer bg-light p-4 mb-3">
+                            <p class="fs-5">No. K-dramas have many genres. Some other popular genres include historical dramas, fantasy dramas, medical dramas, legal dramas, and action dramas. The more popular ones happen to be romantic, and some shows incorporate a romance element regardless of the genre.</p>
+                            <p class="small">Check out this catalog of K-dramas and other Asian shows, where you can filter them by genre: <a href="https://mydramalist.com/shows/top" target="_blank">MyDramaList</a>.</p>
+                            <div class="col-lg-8 mx-auto">
+                                <img src="images/mydearestkdrama.jpg" class="img-fluid" alt="Poster of 'My Dearest' Korean drama">
+                                <p class="small mt-2">A poster of "My Dearest," a 2023 historical drama. Historical dramas are especially loved by K-drama enthusiasts for the traditional attire worn by characters, traditional speech, and scenery reminiscent of dynastic times. (Image source: <a href="https://commons.wikimedia.org/wiki/File:Korean_drama_My_Dearest.jpg">Korea MBC TV</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons)</p>
+                            </div>
+                        </div>
+         
+                        <p class="question fs-4 bg-dark text-light p-4 my-0" role="button">What is special about K-dramas?</p>
+                        <div class="answer bg-light p-4 mb-3">
+                            <p class="fs-5">Everyone has their own reasons for what they find appealing about K-dramas, but the melodramatic aspect of them has been a common reason. According to Steve Choe, an associate professor at Georgetown University, the emphasis of simple and complex feelings complemented by the carefully crafted cinematography has been an alluring feature of many K-dramas.
+                            <p class="small">Reference: <a href="https://gjia.georgetown.edu/2024/06/11/sympathy-for-the-k-drama/" target="_blank">Choe, S. (2024). Sympathy for the K-Drama. Georgetown Journal of International Affairs.</a></p>
+                        </div>
+                        
+                    </div> <!-- End of Q&A column -->
+
+                    <div class="col-lg-5 mx-auto text-center">
+                        <!-- Return to top of page -->
+                        <a class="btn btn-dark mt-5 text-center" href="#home" role="button">Return to the top</a>
+                    </div>
+                    
+                </div> <!-- End of info div --> 
+
+            </div> <!-- End of row -->
+        </div> <!-- End of container -->
+
+        <footer class="bg-dark p-2">
+            <p class="text-light text-center m-2 small">This quiz was created by Zarin Ismail as a project for the University of Florida course, Introduction to Web Apps for Communicators (JOU3363). View the Github repo for this page <a href="https://github.com/zarinismail/kdrama-quiz" target="_blank">here</a>.</p>
+        </footer>
+        <!-- JavaScript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
