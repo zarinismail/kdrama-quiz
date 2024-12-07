@@ -76,6 +76,7 @@ retakeBtn.style.display = 'none';
 // If user wants to retake quiz, page reloads (quiz will restart, result will disappear)
 retakeBtn.onclick = () => {
     location.reload();
+    quiz.scrollIntoView();
 };
 
 /* ALL FUNCTIONS BELOW */
@@ -128,13 +129,20 @@ function calculateResults() {
             break;
     }
 
-    // Log variables to console to see what's happening behind the scenes
+    // Log result to console
     console.log('Final result: ' + result);
     
     const finalResult = document.querySelector(result);
     finalResult.style.display = 'block';
     quiz.style.display = 'none';
     retakeBtn.style.display = 'block';
+
+    // If user clicks "Take quiz" button at the top of the page, page reloads rather than scrolling down to quiz
+    let quizBtn = document.querySelector('#quizbtn');
+    quizBtn.onclick = () => {
+        location.reload();
+        quiz.scrollIntoView();
+    }
 }
 
 // Picks most chosen "number" (indicator of a specific result) from user's answers; if there are ties for most chosen, one is randomly returned
