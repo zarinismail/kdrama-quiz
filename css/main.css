@@ -1,15 +1,7 @@
 body {
     font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    background: linear-gradient(#7882e9, #acb0e3, #ffffff, #ffffff, #dcb6b6, #d58383);
 }
-
-#home {
-    background: linear-gradient(#7882e9, #acb0e3, #ffffff);
-}
-
-#info {
-    background: linear-gradient(#ffffff, #dcb6b6, #d58383);
-}
-
   
 h1, h2 {
     font-family: 'Geologica', Verdana, sans-serif;

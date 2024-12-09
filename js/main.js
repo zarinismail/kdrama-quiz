@@ -65,7 +65,7 @@ results.forEach(function(el) {
 form.onsubmit = (e) => {
     e.preventDefault();
     calculateResults();
-    // Scroll to result (more apparent for mobile devices)
+    // Scroll to result
     const resultArea = document.querySelector('#results');
     resultArea.scrollIntoView();
 };
@@ -142,7 +142,7 @@ function calculateResults() {
     quizBtn.onclick = () => {
         location.reload();
         quiz.scrollIntoView();
-    }
+    };
 }
 
 // Picks most chosen "number" (indicator of a specific result) from user's answers; if there are ties for most chosen, one is randomly returned
